@@ -68,7 +68,7 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
     pro = 0 if property_area == "Semiurban" else 1 if property_area == "Urban" else 2
                              
     #Making prediction
-    prediction = Logistic.Regression_Model:predict(
+    prediction = Logistic.Regression.Model:predict(
     [[gen, mar, dependent, edu, sem, applicant_income, coApplicant_income,
       loan_amount, loam_amount_term, credit_history, pro]]
     )
