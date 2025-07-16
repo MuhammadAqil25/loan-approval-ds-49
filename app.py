@@ -42,7 +42,7 @@ def run_ml_app():
     education = right.selectbox("Education", ("Graduate", "Not Graduate"))
     self_employed = left.selectbox("Self Employed", ("Yes", "No"))
     applicant_income = right.number_input("Applicant Income")
-    coAppliant_income = left.number_input("coApplicant Income")
+    coApplicant_income = left.number_input("coApplicant Income")
     loan_amount = right.number_input("Loan Term")
     loan_amount_term = left.number_input(label = "Loan Amount Term", min_value = 30, max_value = 360)
     credit_history = right.selectbox("Credit History", (0.0, 1.0))
